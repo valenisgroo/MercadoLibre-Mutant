@@ -2,6 +2,7 @@ package com.example.ValentinoIsgro50368.services;
 
 import com.example.ValentinoIsgro50368.entities.Mutant;
 import com.example.ValentinoIsgro50368.repositories.MutantRepository;
+import com.example.ValentinoIsgro50368.validators.Validator;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,11 @@ public class MutantService {
     @Transactional
     public boolean isMutant(String[] dna) throws Exception {
 
-        // Verificar si ya existe un mutante con ese DNA
+        if (!Validator.validarDNA(dna)) {
+            throw new IllegalArgumentException("El ADN ingresado no es válido.");
+        }
+
+        // Verificar mutantes repetidos
         if (mutantRepository.existsByDna(dna)) {
             throw new Exception("El ADN ya existe en la base de datos");
         }

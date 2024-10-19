@@ -10,7 +10,7 @@ import java.util.Optional;
 @Repository
 public interface MutantRepository extends BaseRepository<Mutant, Long> {
 
-    Optional<Mutant> findByDna(String dna);
+    Optional<Mutant> findByDna(String[] dna);
 
     boolean existsByDna(String[] dna);
 

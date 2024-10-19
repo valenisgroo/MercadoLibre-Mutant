@@ -1,4 +1,4 @@
-package com.example.ValentinoIsgro50368.entities;
+package com.example.ValentinoIsgro50368.dtos;
 
 import lombok.*;
 

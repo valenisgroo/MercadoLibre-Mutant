@@ -46,6 +46,10 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+tasks.jar {
+	enabled = true
+}
+
 tasks.named('asciidoctor') {
 	inputs.dir snippetsDir
 	dependsOn test

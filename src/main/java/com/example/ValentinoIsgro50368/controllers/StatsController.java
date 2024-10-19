@@ -1,6 +1,6 @@
 package com.example.ValentinoIsgro50368.controllers;
 
-import com.example.ValentinoIsgro50368.entities.DNAStats;
+import com.example.ValentinoIsgro50368.dtos.DNAStats;
 import com.example.ValentinoIsgro50368.services.StatsService;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

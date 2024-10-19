@@ -1,17 +1,19 @@
 package com.example.ValentinoIsgro50368.entities;
 
-import jakarta.persistence.*;  // Asegúrate de que esta es la importación correcta
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
 
 @Entity
-@Table(name = "mutant") // El nombre de la tabla puede ser diferente
-@NoArgsConstructor
+@Table(name = "mutant")
 @AllArgsConstructor
-@Getter
+@NoArgsConstructor
 @Setter
+@Getter
+@ToString
 @Builder
+
 public class Mutant implements Serializable {
 
     @Id
@@ -21,7 +23,7 @@ public class Mutant implements Serializable {
     @Column(name = "is_mutant")
     private boolean isMutant;
 
-    @ElementCollection // Si tienes un array de ADN, considera esta anotación
+    @ElementCollection
     @Column(name = "dna", unique = true)
-    private String[] dna; // Campo para almacenar el ADN
+    private String[] dna;
 }
