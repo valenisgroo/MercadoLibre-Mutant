@@ -6,8 +6,4 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ValentinoIsgro50368ApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
 }
