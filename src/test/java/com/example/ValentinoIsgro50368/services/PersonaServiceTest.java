@@ -11,7 +11,18 @@ public class PersonaServiceTest {
     @Autowired
     private PersonaService personaService;
 
-
+    @Test
+    public void testVertical() throws Exception {
+        String[] dna = {
+                "ATGCGA",
+                "AAGCGC",
+                "ATACGT",
+                "AGACGG",
+                "CCTGTA",
+                "TCACTG"
+        };
+        assertTrue(personaService.isMutant(dna));
+    }
 
     @Test
     public void testHorizontal() throws Exception {
@@ -26,35 +37,6 @@ public class PersonaServiceTest {
         assertTrue(personaService.isMutant(dna));
     }
 
-
-    @Test
-    public void testVertical() throws Exception {
-        String[] dna = {
-                "ATGCGA",
-                "AAGCGC",
-                "ATACGT",
-                "AGACGG",
-                "CCTGTA",
-                "TCACTG"
-        };
-        assertTrue(personaService.isMutant(dna));
-    }
-
-
-    @Test
-    public void testDescendingDiagonal() throws Exception {
-        String[] dna = {
-                "ATGCGA",
-                "CATTGC",
-                "TTATGT",
-                "AGAATG",
-                "CCGCTA",
-                "TCACTG"
-        };
-        assertTrue(personaService.isMutant(dna));
-    }
-
-
     @Test
     public void testAscendingDiagonal() throws Exception {
         String[] dna = {
@@ -68,6 +50,18 @@ public class PersonaServiceTest {
         assertTrue(personaService.isMutant(dna));
     }
 
+    @Test
+    public void testDescendingDiagonal() throws Exception {
+        String[] dna = {
+                "ATGCGA",
+                "CATTGC",
+                "TTATGT",
+                "AGAATG",
+                "CCGCTA",
+                "TCACTG"
+        };
+        assertTrue(personaService.isMutant(dna));
+    }
 
     @Test
     public void testNoMutant() throws Exception  {
