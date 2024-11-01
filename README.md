@@ -17,11 +17,11 @@ Programa en java spring boot que cumpla con el método pedido por Magneto utiliz
 - Hosting: Se desplegó la API-REST en la aplicación Render. 
 - API REST: Se desarrolló una API REST con el servicio "/mutant/" que detecte mutantes a partir de una secuencia de ADN en formato JSON enviada por una solicitud HTTP con el método POST.
 
-POST /mutant/
+```POST: https://mercadolibre-mutant.onrender.com/mutant/
 {
 "dna": ["AAAA", "CCGA", "TCAT", "AGGA"]
 }
-
+```
 - Respuesta del servicio:
       1) 200-OK cuando es un mutante
       2) 403-Forbidden cuando no mutante.
