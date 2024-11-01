@@ -6,13 +6,13 @@
 
 El desafío cuenta con 3 niveles:
 
-✔️**Nivel 1:**
+✔️ **Nivel 1:**
 
 Programa en java spring boot que cumpla con el método pedido por Magneto utilizando una arquitectura en capas de controladores, servicios y repositorios.
 
 - Tecnologías: Java
 
-✔️**Nivel 2:**
+✔️ **Nivel 2:**
 
 - Hosting: Se desplegó la API-REST en la aplicación Render. 
 - API REST: Se desarrolló una API REST con el servicio "/mutant/" que detecte mutantes a partir de una secuencia de ADN en formato JSON enviada por una solicitud HTTP con el método POST.
@@ -29,7 +29,7 @@ Response: 200-OK Es un mutante
       1) 200-OK cuando es un mutante
       2) 403-Forbidden cuando no mutante.
 
-✔️**Nivel 3:**
+✔️ **Nivel 3:**
 
 - Base de Datos H2: Se implementa una base de datos H2, para almacenar las secuencias de ADN.
 - JMeter: Se utiliza JMeter para probar fluctuaciones agresivas de tráfico.
@@ -47,6 +47,6 @@ Response:
 }
 ```
 
----
-LINK: https://mercadolibre-mutant.onrender.com
----
+DEPLOY:
+**LINK:** https://mercadolibre-mutant.onrender.com
+
