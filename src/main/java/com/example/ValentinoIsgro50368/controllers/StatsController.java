@@ -1,5 +1,6 @@
 package com.example.ValentinoIsgro50368.controllers;
 
+import com.example.ValentinoIsgro50368.services.PersonaService;
 import com.example.ValentinoIsgro50368.dtos.Stats;
 import com.example.ValentinoIsgro50368.services.StatsService;
 import org.springframework.beans.factory.annotation.Autowired;

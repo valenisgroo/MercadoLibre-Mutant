@@ -22,20 +22,19 @@ public class PersonaService {
 
 
     @Transactional
-    public boolean isMutant(String[] dna) {
+    public boolean isMutant(String[] dna) throws Exception {
 
         InvalidDnaException.validateDNASequence(dna);
 
         String dnaSequence = String.join(",", dna);
 
-        //Verificar si ya existe una persona con ese DNA
+        //Verificar si existe una persona con el mismo Dna
         Optional<Persona> personaExistente = personaRepository.findByDna(dnaSequence);
         if(personaExistente.isPresent()){
             return personaExistente.get().isMutant();
         }
 
         boolean isMutant = checkDna(dna);
-
         //Verificar si existe sino crear la persona
         Persona persona = Persona.builder().dna(dnaSequence).isMutant(isMutant).build();
         personaRepository.save(persona);
@@ -92,6 +91,6 @@ public class PersonaService {
 
         return false;
     }
-
 }
+
 
