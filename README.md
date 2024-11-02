@@ -54,7 +54,7 @@ Response:
 }
 ```
 
-## CÓMO EJECUTAR LA API MUTANT?
+## CÓMO EJECUTAR LA API MUTANT ?
 
 -- LOCAL --
 
@@ -63,7 +63,9 @@ Response:
 3) Abrir POSTMAN
 4) Copiar la url: http://localhost:8080
 5) Probar:
+   
    5.1) **POST** --> http://localhost:8080/mutant/
+
    5.2) **GET**  --> http://localhost:8080/stats
 
 
@@ -72,7 +74,9 @@ Response:
 1) Abrir POSTMAN
 2) Copiar la url: https://mercadolibre-mutant.onrender.com
 3) Probar:
+   
    3.1) **POST** --> https://mercadolibre-mutant.onrender.com/mutant/
+
    3.2) **GET**  --> https://mercadolibre-mutant.onrender.com/stats
 
 
@@ -80,7 +84,7 @@ Con un servicio cómo Postman puede interactuar con la API mientras se corre la 
 Detección de mutantes: POST /mutant/
 Estadísticas: GET /stats
 
-## DEPLOY:
+## DEPLOY (RENDER)
 
 **LINK:**  https://mercadolibre-mutant.onrender.com
 
