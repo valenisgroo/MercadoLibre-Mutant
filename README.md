@@ -65,8 +65,9 @@ Response:
 5) Probar:
    
    5.1) **POST** --> http://localhost:8080/mutant/
-
+   
    5.2) **GET**  --> http://localhost:8080/stats
+
 
 
 -- REMOTO --
@@ -79,10 +80,6 @@ Response:
 
    3.2) **GET**  --> https://mercadolibre-mutant.onrender.com/stats
 
-
-Con un servicio cómo Postman puede interactuar con la API mientras se corre la aplicación usando la siguiente URL: http://localhost:8080 y acceder a los servicios posibles:
-Detección de mutantes: POST /mutant/
-Estadísticas: GET /stats
 
 ## DEPLOY (RENDER)
 
