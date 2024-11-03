@@ -1,6 +1,6 @@
 # Parcial: API Mutant Detection - Desarrollo de Software (UTN) 🧬 
 
-¡Bienvenido al repositorio del proyecto de detección de mutantes! Este trabajo práctico está basado en una prueba técnica y tiene como objetivo construir una API que identifique mutantes mediante secuencias de ADN utilizando principlamente Java y Spring Boot.
+¡Bienvenido al repositorio del proyecto de detección de mutantes! Este proyecto tiene como objetivo construir una API que identifique mutantes mediante secuencias de ADN utilizando principlamente Java y Spring Boot.
 
 ## ENUNCIADO
 
@@ -62,7 +62,7 @@ Response:
 2) Abir IDE favorito y correr el programa main (ValentinoIsgroApplication)
 3) Abrir POSTMAN
 4) Copiar la url: http://localhost:8080
-5) Probar:
+5) Probar los ENDPOINTS:
    
    5.1) **POST** --> http://localhost:8080/mutant/
    
@@ -74,7 +74,7 @@ Response:
 
 1) Abrir POSTMAN
 2) Copiar la url: https://mercadolibre-mutant.onrender.com
-3) Probar:
+3) Probar los ENDPOINTS:
    
    3.1) **POST** --> https://mercadolibre-mutant.onrender.com/mutant/
 
